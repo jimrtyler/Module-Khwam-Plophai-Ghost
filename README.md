@@ -69,7 +69,9 @@ Ghost ສະໜອງ **16 ຟັງຊັນການເສີມຄວາມ�
 ### ການປະເມີນຄວາມປອດໄພ
 ```powershell
 # ໂຫລດໂມດູນ Ghost
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 
 # ກວດສອບສະພາບຄວາມປອດໄພປັດຈຸບັນ
 Get-Ghost
@@ -97,7 +99,9 @@ Set-Ghost -SMBv1 -RDP -USBStorage -Intune
 
 ### ທາງເລືອກ 1: ດາວໂຫລດໂດຍກົງ (ການທົດສອບ)
 ```powershell
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 ```
 
 ### ທາງເລືອກ 2: ການຕິດຕັ້ງໂມດູນ
